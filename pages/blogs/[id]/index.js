@@ -23,6 +23,21 @@ const Blogs = ({ article }) => {
 
 export default Blogs;
 
+// get server side props do not run with static paths,
+
+// export const getServerSideProps = async (context) => {
+//   const response = await fetch(`
+//     https://jsonplaceholder.typicode.com/posts/${context.params.id}
+//     `);
+//   const article = await response.json();
+
+//   return {
+//     props: {
+//       article,
+//     },
+//   };
+// };
+
 export const getStaticProps = async (context) => {
   const response = await fetch(`
     https://jsonplaceholder.typicode.com/posts/${context.params.id}
