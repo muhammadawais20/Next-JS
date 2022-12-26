@@ -1,0 +1,25 @@
+.container {
+  display: flex;
+  align-items: center;
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+  height: 75px;
+  background-color: blueviolet;
+}
+
+.list {
+  display: flex;
+  margin-left: 100px;
+  gap: 30px;
+}
+
+.list > li {
+  list-style-type: none;
+}
+
+.list > li > .link {
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+}

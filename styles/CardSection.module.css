@@ -1,0 +1,21 @@
+.container {
+  max-width: 1600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.wrapper {
+  gap: 50px;
+}
+
+.cardData {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+
+@media (max-width: 767px) {
+  .cardData {
+    flex-direction: column;
+  }
+}
